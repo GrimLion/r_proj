@@ -3,13 +3,13 @@ source 'https://rubygems.org'
 # you are using Ruby 1.9.3, better to 2.0.0 upgrade for more speed
 #ruby '2.0.0'
 
-gem 'rails', '4.0.0.rc1'    
-gem 'sass-rails', '~> 4.0.0.rc1'    
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'rails'   
+gem 'sass-rails'  
+gem 'uglifier'
+gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'    
-gem 'jbuilder', '~> 1.0.1'
+gem 'jbuilder'
 
 # The asset_sync gem is WELL worth using
 # but you should read more about it before deciding
