@@ -8,9 +8,13 @@ describe "StaticPages" do
 			visit '/static_pages/home'
 			page.should have_selector('h1', :text => 'GrimLion')
 		end
-		it "should have the title 'Home'" do
+		it "should have the base title" do
 			visit'/static_pages/home'
-			page.should have_title("GrimLion | Home")
+			page.should have_title("GrimLion")
+		end
+		it "should have a custom page title" do
+			visit'/static_pages/home'
+			page.should_not have_title("| Home")
 		end
 	end
 
@@ -36,4 +40,16 @@ describe "StaticPages" do
 			page.should have_title(" | About Us")
 		end
 	end
+
+	describe "Contact page" do
+		it "should have the h1 'Contact'" do
+			visit '/static_pages/contact'
+			page.should have_selector('h1', :text => 'Contact')
+		end
+		it "should have the title 'Contact'" do
+			visit '/static_pages/contact'
+			page.should have_title("| Contact")
+		end
+	end
+
 end

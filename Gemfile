@@ -17,13 +17,19 @@ gem 'jbuilder'
 # gem 'asset_sync'
 
 # only want sqlite in dev and test envs
-group :development, :test do
+group :development do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard-rspec'
 end
 
 group :test do
+	gem 'rspec-rails'
 	gem 'capybara'
+	gem 'rb-inotify'
+	gem 'libnotify'
+	gem 'guard-spork'
+	gem 'spork'
 end
 
 group :production do
