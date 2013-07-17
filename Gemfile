@@ -3,7 +3,8 @@ source 'https://rubygems.org'
 # you are using Ruby 1.9.3, better to 2.0.0 upgrade for more speed
 #ruby '2.0.0'
 
-gem 'rails'   
+gem 'rails'  
+gem 'bootstrap-sass' 
 gem 'sass-rails'  
 gem 'uglifier'
 gem 'coffee-rails'
